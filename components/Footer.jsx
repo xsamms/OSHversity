@@ -11,7 +11,12 @@ export default function Footer() {
               <div className="col-md-4">
                 <div className="footer-widget">
                   <div className="footer-logo mb35">
-                    <img src="assets/img/logo/oshversity-logo.png" alt="" />
+                    <Image
+                      src="/assets/img/logo/oshversity-logo.png"
+                      alt=""
+                      width={295}
+                      height={95}
+                    />
                   </div>
                   <div className="footer-about-text">
                     <p>
