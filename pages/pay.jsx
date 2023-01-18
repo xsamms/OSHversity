@@ -2,6 +2,7 @@ import { usePaystackPayment } from "react-paystack";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const config = {
   reference: new Date().getTime().toString(),
@@ -197,7 +198,12 @@ export default function Pay(props) {
               </div>
               <div className="col-md-6">
                 <div className="payment-img float-right">
-                  <img src="assets/img/banner/p-1.jpg" alt="" />
+                  <Image
+                    src="/assets/img/banner/p-1.jpg"
+                    alt=""
+                    width={217}
+                    height={34}
+                  />
                 </div>
               </div>
             </div>

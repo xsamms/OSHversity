@@ -168,7 +168,7 @@ export default function Header() {
                       <Link href="/hsbs">HSBS</Link>
                     </li>
                     <li>
-                      <a href="/pay">Pay</a>
+                      <Link href="/pay">Pay</Link>
                     </li>
                     <li>
                       <Link href="/contact">Contact Us</Link>
