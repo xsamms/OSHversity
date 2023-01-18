@@ -168,7 +168,7 @@ export default function Header() {
                       <Link href="/hsbs">HSBS</Link>
                     </li>
                     <li>
-                      <a href="#latest-area">Pay</a>
+                      <a href="/pay">Pay</a>
                     </li>
                     <li>
                       <Link href="/contact">Contact Us</Link>
@@ -314,7 +314,7 @@ export default function Header() {
             </li>
 
             <li className="card">
-              <Link className="menu-link" href="/about">
+              <Link className="menu-link" href="/pay">
                 Pay
               </Link>
             </li>

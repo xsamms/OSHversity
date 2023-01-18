@@ -5879,10 +5879,10 @@ ul.product-tab li.active:after {
   width: 100%;
 }
 .payment-info label {
-  width: 20%;
+  width: 40%;
   float: left;
   color: #999999;
-  margin-top: 15px;
+  margin-top: 0px;
   font-weight: 500;
 }
 .payment-info input,
@@ -5890,7 +5890,7 @@ ul.product-tab li.active:after {
 .register-form-area .payment-info select,
 .payment-info .register-form-area textarea,
 .register-form-area .payment-info textarea {
-  width: 80%;
+  width: 60%;
   height: 50px;
   background-color: #f9f9f9;
   border-radius: 4px;

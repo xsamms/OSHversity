@@ -12,23 +12,22 @@ export default function Layout({ title, keyword, description, children }) {
         <meta name="keyword" content={keyword} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <script src="assets/js/jquery-2.1.4.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <script src="assets/js/jarallax.js"></script>
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <script src="assets/js/lightbox.js"></script>
-        <script src="assets/js/jquery.meanmenu.js"></script>
-        <script src="assets/js/scrollreveal.min.js"></script>
-        <script src="assets/js/jquery.counterup.min.js"></script>
-        <script src="assets/js/waypoints.min.js"></script>
-        <script src="assets/js/jquery-ui.js"></script>
-        <script src="assets/js/gmap3.min.js"></script>
-        <script src="assets/js/switch.js"></script>
-        <script src="http://maps.google.com/maps/api/js?key=AIzaSyC61_QVqt9LAhwFdlQmsNwi5aUJy9B2SyA"></script>
+        <script src="assets/js/jquery-2.1.4.min.js" />
+        <script src="assets/js/bootstrap.min.js" />
+        <script src="assets/js/popper.min.js" />
+        <script src="assets/js/owl.carousel.min.js" />
+        <script src="assets/js/jarallax.js" />
+        <script src="assets/js/jquery.magnific-popup.min.js" />
+        <script src="assets/js/lightbox.js" />
+        <script src="assets/js/jquery.meanmenu.js" />
+        <script src="assets/js/scrollreveal.min.js" />
+        <script src="assets/js/jquery.counterup.min.js" />
+        <script src="assets/js/waypoints.min.js" />
+        <script src="assets/js/jquery-ui.js" />
+        <script src="assets/js/gmap3.min.js" />
+        <script src="assets/js/switch.js" />
 
-        <script src="assets/js/script.js"></script>
+        <script src="assets/js/script.js" />
       </Head>
 
       <Header />

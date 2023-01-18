@@ -1,78 +1,150 @@
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { toast } from "react-toastify";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const [allValues, setAllValues] = useState({
+    fullname: "",
+    phonenumber: "",
+    email: "",
+    password: "",
+    course: "",
+    programDiscovery: "",
+  });
+
+  const { fullname, phonenumber, email, course } = allValues;
+
+  const changeHandler = (e) => {
+    setAllValues({ ...allValues, [e.target.name]: e.target.value });
+  };
+
+  const route = useRouter();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("/api/register", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(allValues),
+      });
+
+      if (response.status === 200) {
+        toast.success("User created successfully");
+        route.push({
+          pathname: "/pay",
+          query: {
+            Fullname: fullname,
+            Phonenumber: phonenumber,
+            Email: email,
+            Course: course,
+          },
+        });
+      }
+    } catch (error) {
+      toast.error("Unable to create user");
+      console.log(error);
+    }
+  };
+
   return (
     <>
-      <section id="slide" className="slider-section">
-        <div id="slider-item" className="slider-item-details">
-          <div className="slider-area slider-bg-1 relative-position">
-            <div className="slider-text">
-              <div className="section-title mb20 headline text-center ">
-                <div className="layer-1-1">
-                  <span className="subtitle text-uppercase">
-                    OSHversity &amp; TRAINING ORGANIZATION
-                  </span>
-                </div>
-                <div className="layer-1-3">
-                  <h2>
-                    <span>Health, Safety and Wellness Training</span>
-                  </h2>
-                </div>
+      <section>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <Image
+                class="d-block w-100"
+                src="/assets/img/banner/banner1.jpg"
+                alt="First slide"
+                width={1920}
+                height={980}
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h3 style={{ textShadow: "1px 1px #000" }}>
+                  Health, Safety and Wellness Training
+                </h3>
+                <p>OSHversity - TRAINING ORGANIZATION</p>
               </div>
-              <div className="layer-1-4">
-                <div id="course-btn">
-                  <div className="genius-btn  text-center text-uppercase ul-li-block bold-font">
-                    <Link href="/courses">
-                      Our Courses <i className="fas fa-caret-right" />
-                    </Link>
-                  </div>
-                </div>
+            </div>
+            <div class="carousel-item">
+              <Image
+                class="d-block w-100"
+                src="/assets/img/banner/banner2.jpg"
+                alt="Second slide"
+                width={1920}
+                height={980}
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h3 style={{ textShadow: "1px 1px #000" }}>
+                  HEALTH & SAFETY BUSINESS SCHOOL
+                </h3>
+                <p>OSHversity - TRAINING ORGANIZATION</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <Image
+                class="d-block w-100"
+                src="/assets/img/banner/banner3.jpg"
+                alt="Third slide"
+                width={1920}
+                height={980}
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h3 style={{ textShadow: "1px 1px #000" }}>
+                  Improve competence in the workplace
+                </h3>
+                <p>OSHversity - TRAINING ORGANIZATION</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <Image
+                class="d-block w-100"
+                src="/assets/img/banner/banner4.jpg"
+                alt="Fourth slide"
+                width={1920}
+                height={980}
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>OSHversity - TRAINING ORGANIZATION</p>
               </div>
             </div>
           </div>
-          <div className="slider-area slider-bg-2 relative-position">
-            <div className="slider-text">
-              <div className="section-title mb20 headline text-center ">
-                <div className="layer-1-1">
-                  <span className="subtitle text-uppercase">
-                    OSHversity &amp; TRAINING ORGANIZATION
-                  </span>
-                </div>
-                <div className="layer-1-2">
-                  <h2 className="secoud-title">
-                    <span>
-                      Improve competence in <br /> the workplace
-                    </span>
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="slider-area slider-bg-3 relative-position">
-            <div className="slider-text">
-              <div className="section-title mb20 headline text-center ">
-                <div className="layer-1-3">
-                  <h2 className="third-slide">
-                    <span>HEALTH & SAFETY BUSINESS SCHOOL</span>
-                  </h2>
-                </div>
-              </div>
-              <div className="layer-1-4">
-                <div className="about-btn text-center">
-                  <div className="genius-btn text-center text-uppercase ul-li-block bold-font">
-                    <Link href="/hsbs">
-                      Learn more <i className="fas fa-caret-right" />
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="slider-area slider-bg-4 relative-position">
-            <div className="slider-text"></div>
-          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </section>
 
@@ -86,25 +158,22 @@ export default function Home() {
                     <h3 className="bold-font">Register</h3>
                   </div>
                   <div className="register-form-area">
-                    <form
-                      className="contact_form"
-                      action="#"
-                      method="POST"
-                      encType="multipart/form-data"
-                    >
+                    <form className="contact_form" onSubmit={handleSubmit}>
                       <div className="contact-info">
                         <input
                           className="name"
-                          name="name"
+                          name="fullname"
                           type="text"
-                          placeholder="Your Name."
+                          onChange={changeHandler}
+                          placeholder="Your Full Name"
                         />
                       </div>
                       <div className="contact-info">
                         <input
                           className="nbm"
-                          name="nbm"
+                          name="phonenumber"
                           type="text"
+                          onChange={changeHandler}
                           placeholder="Your Phone Number"
                         />
                       </div>
@@ -113,10 +182,24 @@ export default function Home() {
                           className="email"
                           name="email"
                           type="email"
-                          placeholder="Email Address."
+                          onChange={changeHandler}
+                          placeholder="Email Address"
                         />
                       </div>
-                      <select>
+                      <div className="contact-info">
+                        <input
+                          className="email"
+                          name="password"
+                          type="password"
+                          onChange={changeHandler}
+                          placeholder="Password"
+                        />
+                      </div>
+                      <select
+                        id="course"
+                        name="course"
+                        onChange={changeHandler}
+                      >
                         <option defaultValue={9}>Select Course</option>
                         <option value="Career Advisory and Coaching">
                           Career Advisory and Coaching
@@ -163,8 +246,9 @@ export default function Home() {
                             <input
                               type="radio"
                               id="Email"
-                              name="where_program"
+                              name="programDiscovery"
                               value="Email"
+                              onChange={changeHandler}
                             />
                             <label htmlFor="Email">Email</label>
                           </li>
@@ -172,9 +256,10 @@ export default function Home() {
                             <input
                               type="radio"
                               id="LinkedIn"
-                              name="where_program"
+                              name="programDiscovery"
                               value="LinkedIn"
                               className="name"
+                              onChange={changeHandler}
                             />
                             <label htmlFor="LinkedIn">LinkedIn</label>
                           </li>
@@ -183,8 +268,9 @@ export default function Home() {
                             <input
                               type="radio"
                               id="twitter"
-                              name="where_program"
+                              name="programDiscovery"
                               value="Twitter"
+                              onChange={changeHandler}
                             />
                             <label htmlFor="twitter">Twitter</label>
                           </li>
@@ -192,8 +278,9 @@ export default function Home() {
                             <input
                               type="radio"
                               id="instagram"
-                              name="where_program"
+                              name="programDiscovery"
                               value="Instagram"
+                              onChange={changeHandler}
                             />
                             <label htmlFor="instagram">Instagram</label>
                           </li>
@@ -202,8 +289,9 @@ export default function Home() {
                             <input
                               type="radio"
                               id="facebook"
-                              name="where_program"
+                              name="programDiscovery"
                               value="Facebook"
+                              onChange={changeHandler}
                             />
                             <label htmlFor="facebook">Facebook</label>
                           </li>
@@ -212,8 +300,9 @@ export default function Home() {
                             <input
                               type="radio"
                               id="search-engine"
-                              name="where_program"
+                              name="programDiscovery"
                               value="Search Engine"
+                              onChange={changeHandler}
                             />
                             <label htmlFor="search-engine">
                               Search <br />
@@ -224,8 +313,9 @@ export default function Home() {
                             <input
                               type="radio"
                               id="other"
-                              name="where_program"
+                              name="programDiscovery"
                               value="Other"
+                              onChange={changeHandler}
                             />
                             <label htmlFor="other">Other</label>
                           </li>
