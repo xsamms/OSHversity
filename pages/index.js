@@ -72,7 +72,7 @@ export default function Home() {
             <div class="carousel-item active">
               <Image
                 class="d-block w-100"
-                src="/assets/img/banner/banner1.jpg"
+                src="/assets/img/banner/banner5.jpg"
                 alt="First slide"
                 width={1920}
                 height={980}
@@ -87,7 +87,7 @@ export default function Home() {
             <div class="carousel-item">
               <Image
                 class="d-block w-100"
-                src="/assets/img/banner/banner2.jpg"
+                src="/assets/img/banner/banner1.jpg"
                 alt="Second slide"
                 width={1920}
                 height={980}
@@ -102,7 +102,7 @@ export default function Home() {
             <div class="carousel-item">
               <Image
                 class="d-block w-100"
-                src="/assets/img/banner/banner3.jpg"
+                src="/assets/img/banner/banner2.jpg"
                 alt="Third slide"
                 width={1920}
                 height={980}
@@ -117,7 +117,7 @@ export default function Home() {
             <div class="carousel-item">
               <Image
                 class="d-block w-100"
-                src="/assets/img/banner/banner4.jpg"
+                src="/assets/img/banner/banner3.jpg"
                 alt="Fourth slide"
                 width={1920}
                 height={980}
