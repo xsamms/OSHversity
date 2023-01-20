@@ -200,15 +200,20 @@ export default function Home() {
                           placeholder="Password"
                         />
                       </div>
-                      <div className="contact-info">
-                        <input
-                          className="name"
-                          name="qualification"
-                          type="text"
-                          onChange={changeHandler}
-                          placeholder="Your Qualification"
-                        />
-                      </div>
+                      <select
+                        id="qualification"
+                        name="qualification"
+                        onChange={changeHandler}
+                      >
+                        <option defaultValue={9}>Qualification</option>
+                        <option value="Certificate">Certificate</option>
+                        <option value="Diploma">Diploma</option>
+                        <option value="Bachelors">Bachelors</option>
+                        <option value="Masters">Masters</option>
+                        <option value="PhD">PhD</option>
+                        <option value="Professor">Professor</option>
+                      </select>
+
                       <select
                         id="course"
                         name="course"
