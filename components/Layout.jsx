@@ -38,9 +38,9 @@ export default function Layout({ title, keyword, description, children }) {
 }
 
 Layout.defaultProps = {
-  title: "Occupational Safety and Health training  | OSHversity",
+  title: "OSHversity Training and Development Company (TDC) | OSHversity",
   description:
     "We are a complete training and competency improvement organisation that offers FREE Occupational Safety and Health training to fresh graduates who are interested in going into OSH profession.",
   keyword:
-    "Occupational Safety and Health training, Occupational Safety and Health, Workplace Mental Health Training, Safety and Health Leadership, Employees Pre-Retirement Training, Patient Safety and Quality Improvement in Healthcare, First Aid and EMS Training, SEO Company in Lagos Nigeria, Life Coaching",
+    "OSHversity Training and Development Company (TDC), Occupational Safety and Health training, Occupational Safety and Health, Workplace Mental Health Training, Safety and Health Leadership, Employees Pre-Retirement Training, Patient Safety and Quality Improvement in Healthcare, First Aid and EMS Training, SEO Company in Lagos Nigeria, Life Coaching",
 };

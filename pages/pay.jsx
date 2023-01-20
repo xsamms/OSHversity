@@ -25,7 +25,8 @@ const onClose = () => {
 
 export default function Pay(props) {
   const route = useRouter();
-  const { Fullname, Phonenumber, Email, Course } = route.query;
+  const { Fullname, Phonenumber, Email, Course, Qualification, Country } =
+    route.query;
 
   const [fullName, setFullName] = useState(Fullname);
   const [phoneNumber, setPhoneNumber] = useState(Phonenumber);
@@ -101,90 +102,27 @@ export default function Pay(props) {
                 <div className="payment-info">
                   <label className=" control-label">Full Name :</label>
                   <p>{Fullname}</p>
-                  {/* <input
-                  className="name pl-2"
-                  name="fullname"
-                  type="text"
-                  value={Fullname}
-                  placeholder=""
-                /> */}
                 </div>
                 <div className="payment-info">
                   <label className="control-label">Phone Number :</label>
                   <p>{Phonenumber}</p>
-                  {/* <input
-                  className="nbm pl-2"
-                  name="phonenumber"
-                  type="text"
-                  value={Phonenumber}
-                  placeholder=""
-                /> */}
                 </div>
                 <div className="payment-info">
                   <label className=" control-label">Your Email :</label>
                   <p>{Email}</p>
-                  {/* <input
-                  className="email pl-2"
-                  name="email"
-                  type="email"
-                  value={Email}
-                  placeholder=""
-                /> */}
                 </div>
-                {/* <div className="payment-info">
-                <label className=" control-label">Password :</label>
-                <input
-                  className="email"
-                  name="password"
-                  type="password"
-                  placeholder="Password"
-                />
-              </div> */}
+
                 <div className="payment-info">
-                  <label className="control-label">Select Course :</label>
+                  <label className="control-label">Qualification :</label>
+                  <p>{Qualification}</p>
+                </div>
+                <div className="payment-info">
+                  <label className="control-label">Selected Course :</label>
                   <p>{Course}</p>
-                  {/* <select
-                  id="course"
-                  name="course"
-                  value={Course}
-                  className="pl-2"
-                >
-                  <option defaultValue={9}>Select Course</option>
-                  <option value="Career Advisory and Coaching">
-                    Career Advisory and Coaching
-                  </option>
-                  <option value="OSH Training and Skills Improvement">
-                    OSH Training and Skills Improvement
-                  </option>
-                  <option value="Workplace Mental Health Training">
-                    Workplace Mental Health Training
-                  </option>
-                  <option value="Safety and Health Leadership ">
-                    Safety and Health Leadership{" "}
-                  </option>
-                  <option value="Employees Pre-Retirement Training">
-                    Employees Pre-Retirement Training
-                  </option>
-                  <option value="Workplace Health and Wellness Programs">
-                    Workplace Health and Wellness Programs
-                  </option>
-                  <option value="Safety, Health, Wellbeing and Productivity">
-                    Safety, Health, Wellbeing and Productivity
-                  </option>
-                  <option value="Ergonomics Management Training">
-                    Ergonomics Management Training
-                  </option>
-                  <option value="Patient Safety and Quality Improvement in Healthcare">
-                    Patient Safety and Quality Improvement in Healthcare
-                  </option>
-                  <option value="Food Safety and HACCP Training ">
-                    Food Safety and HACCP Training{" "}
-                  </option>
-                  <option value="First Aid and EMS Training">
-                    First Aid and EMS Training
-                  </option>
-                  <option value="Life Coaching">Life Coaching</option>
-                </select> */}
+                </div>
+                <div className="payment-info">
+                  <label className="control-label">Country of Origin :</label>
+                  <p>{Country}</p>
                 </div>
               </form>
             </div>

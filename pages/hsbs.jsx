@@ -432,7 +432,7 @@ export default function hsbs() {
                         </div>
                       </div>
                       <div className="teacher-name">
-                        <span>Yohama Caraballo-Arias </span>
+                        <span>Yohama Caraballo-Arias (Venezuela) </span>
                         <p>
                           She is an Occupational Physician, an active member of
                           the Council of Scientific Advisors of the American
@@ -464,7 +464,7 @@ export default function hsbs() {
                         </div>
                       </div>
                       <div className="teacher-name">
-                        <span>Helmut Nod</span>
+                        <span>Helmut Nod (Germany)</span>
                         <p>
                           He is a renowned Occupational Safety and Health expert
                           who holds a PhD in Psychology focusing on Occupational
@@ -495,7 +495,7 @@ export default function hsbs() {
                         </div>
                       </div>
                       <div className="teacher-name">
-                        <span>Kevin Uzoma </span>
+                        <span>Moyo Dingani (Zimbabwe) </span>
                         <p>
                           He is a specialist Occupational Medicine Physician,
                           OSH Consultant and an academic researcher. He holds
@@ -528,7 +528,7 @@ export default function hsbs() {
                         </div>
                       </div>
                       <div className="teacher-name">
-                        <span>Veronika Jakl</span>
+                        <span>Veronika Jakl (Austria)</span>
                         <p>
                           She is a Work Psychologist from Vienna, Austria. She
                           is an expert in work-related stress for private
@@ -560,7 +560,7 @@ export default function hsbs() {
                         </div>
                       </div>
                       <div className="teacher-name">
-                        <span>Ehi Iden</span>
+                        <span>Ehi Iden (Nigeria)</span>
                         <p>
                           He is an Occupational Safety and Health Consultant, a
                           Doctoral Fellow working on Workplace Health and
@@ -593,7 +593,7 @@ export default function hsbs() {
                         </div>
                       </div>
                       <div className="teacher-name">
-                        <span>Stewart Carnegie</span>
+                        <span>Stewart Carnegie (United Kingdom)</span>
                         <p>
                           He is a very thorough OSH Expert with over 25 years
                           international experience leading multinational
@@ -634,7 +634,7 @@ export default function hsbs() {
                       </div>
                     </div>
                     <div className="teacher-name">
-                      <span>Clive</span>
+                      <span>Clive (United Kingdom)</span>
                       <p>
                         He is a healthcare, charities and digital strategy
                         expert, with nearly 30 years of experience in navigating

@@ -10,11 +10,14 @@ export default function Home() {
     phonenumber: "",
     email: "",
     password: "",
+    qualification: "",
     course: "",
+    country: "",
     programDiscovery: "",
   });
 
-  const { fullname, phonenumber, email, course } = allValues;
+  const { fullname, phonenumber, email, course, qualification, country } =
+    allValues;
 
   const changeHandler = (e) => {
     setAllValues({ ...allValues, [e.target.name]: e.target.value });
@@ -33,19 +36,21 @@ export default function Home() {
       });
 
       if (response.status === 200) {
-        toast.success("User created successfully");
+        toast.success("Registration Successful");
         route.push({
           pathname: "/pay",
           query: {
             Fullname: fullname,
             Phonenumber: phonenumber,
+            Qualification: qualification,
             Email: email,
             Course: course,
+            Country: country,
           },
         });
       }
     } catch (error) {
-      toast.error("Unable to create user");
+      toast.error("Registration failed");
       console.log(error);
     }
   };
@@ -195,6 +200,15 @@ export default function Home() {
                           placeholder="Password"
                         />
                       </div>
+                      <div className="contact-info">
+                        <input
+                          className="name"
+                          name="qualification"
+                          type="text"
+                          onChange={changeHandler}
+                          placeholder="Your Qualification"
+                        />
+                      </div>
                       <select
                         id="course"
                         name="course"
@@ -235,9 +249,43 @@ export default function Home() {
                           First Aid and EMS Training
                         </option>
                         <option value="Life Coaching">Life Coaching</option>
+                        <option value="Pre-Retirement Training for Employees">
+                          Pre-Retirement Training for Employees
+                        </option>
+                        <option value="OSH and Labour Inspection Training">
+                          OSH and Labour Inspection Training
+                        </option>
                       </select>
 
-                      <div>
+                      <div className="contact-info">
+                        <input
+                          className="name"
+                          name="country"
+                          type="text"
+                          onChange={changeHandler}
+                          placeholder="Country of Origin"
+                        />
+                      </div>
+
+                      <select
+                        id="programDiscovery"
+                        name="programDiscovery"
+                        onChange={changeHandler}
+                        className="mb-5"
+                      >
+                        <option defaultValue={9}>
+                          Where did you hear about this program?
+                        </option>
+                        <option value="Email">Email</option>
+                        <option value="LinkedIn">LinkedIn</option>
+                        <option value="Twitter">Twitter</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Search Engine">Search Engine</option>
+                        <option value="Other">Other</option>
+                      </select>
+
+                      {/* <div>
                         <p className="mt-3">
                           Where did you hear about this program?
                         </p>
@@ -319,8 +367,8 @@ export default function Home() {
                             />
                             <label htmlFor="other">Other</label>
                           </li>
-                        </ul>
-                      </div>
+                        </ul> */}
+                      {/* </div> */}
                       <div className="nws-button text-uppercase text-center white text-capitalize gradient-bg">
                         <button type="submit" value="Submit">
                           register
@@ -1033,7 +1081,7 @@ export default function Home() {
                             <span>Primary: </span>(+234) 802 491 8800
                           </li>
                           <li>
-                            <span>Second: </span>(+234) 802 3434 9999
+                            <span>Second: </span>(+234) 1 454 9255
                           </li>
                         </ul>
                       </div>

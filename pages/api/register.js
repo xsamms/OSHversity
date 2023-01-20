@@ -18,7 +18,9 @@ export default async function handler(req, res) {
       phonenumber: req.body.phonenumber,
       email: req.body.email,
       password: passwordHash,
+      qualification: req.body.qualification,
       course: req.body.course,
+      country: req.body.country,
       programDiscovery: req.body.programDiscovery,
     });
 

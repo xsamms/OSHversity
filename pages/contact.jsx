@@ -133,7 +133,7 @@ export default function contact() {
                             <span>Primary: </span>(+234) 802 491 8800
                           </li>
                           <li>
-                            <span>Second: </span>(+234) 802 3434 9999
+                            <span>Second: </span>(+234) 1 454 9255
                           </li>
                         </ul>
                       </div>

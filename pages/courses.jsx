@@ -44,16 +44,6 @@ export default function courses() {
                               height={220}
                             />
 
-                            <div className="course-price text-center gradient-bg">
-                              <span>$99.00</span>
-                            </div>
-
-                            <div className="course-details-btn">
-                              <a href="#">
-                                COURSE DETAIL{" "}
-                                <i className="fas fa-arrow-right"></i>
-                              </a>
-                            </div>
                             <div className="blakish-overlay"></div>
                           </div>
                           <div className="best-course-text">
@@ -80,16 +70,7 @@ export default function courses() {
                               width={400}
                               height={220}
                             />
-                            <div className="course-price text-center gradient-bg">
-                              <span>$99.00</span>
-                            </div>
 
-                            <div className="course-details-btn">
-                              <a href="#">
-                                COURSE DETAIL{" "}
-                                <i className="fas fa-arrow-right"></i>
-                              </a>
-                            </div>
                             <div className="blakish-overlay"></div>
                           </div>
                           <div className="best-course-text">
@@ -118,16 +99,7 @@ export default function courses() {
                               width={400}
                               height={220}
                             />
-                            <div className="course-price text-center gradient-bg">
-                              <span>$99.00</span>
-                            </div>
 
-                            <div className="course-details-btn">
-                              <a href="#">
-                                COURSE DETAIL{" "}
-                                <i className="fas fa-arrow-right"></i>
-                              </a>
-                            </div>
                             <div className="blakish-overlay"></div>
                           </div>
                           <div className="best-course-text">
@@ -154,16 +126,7 @@ export default function courses() {
                               width={400}
                               height={220}
                             />
-                            <div className="course-price text-center gradient-bg">
-                              <span>$99.00</span>
-                            </div>
 
-                            <div className="course-details-btn">
-                              <a href="#">
-                                COURSE DETAIL{" "}
-                                <i className="fas fa-arrow-right"></i>
-                              </a>
-                            </div>
                             <div className="blakish-overlay"></div>
                           </div>
                           <div className="best-course-text">
@@ -193,16 +156,7 @@ export default function courses() {
                               width={400}
                               height={220}
                             />
-                            <div className="course-price text-center gradient-bg">
-                              <span>$99.00</span>
-                            </div>
 
-                            <div className="course-details-btn">
-                              <a href="#">
-                                COURSE DETAIL{" "}
-                                <i className="fas fa-arrow-right"></i>
-                              </a>
-                            </div>
                             <div className="blakish-overlay"></div>
                           </div>
                           <div className="best-course-text">
@@ -232,16 +186,6 @@ export default function courses() {
                               height={220}
                             />
 
-                            <div className="course-price text-center gradient-bg">
-                              <span>$99.00</span>
-                            </div>
-
-                            <div className="course-details-btn">
-                              <a href="#">
-                                COURSE DETAIL{" "}
-                                <i className="fas fa-arrow-right"></i>
-                              </a>
-                            </div>
                             <div className="blakish-overlay"></div>
                           </div>
                           <div className="best-course-text">
@@ -268,16 +212,7 @@ export default function courses() {
                               width={400}
                               height={220}
                             />
-                            <div className="course-price text-center gradient-bg">
-                              <span>$99.00</span>
-                            </div>
 
-                            <div className="course-details-btn">
-                              <a href="#">
-                                COURSE DETAIL{" "}
-                                <i className="fas fa-arrow-right"></i>
-                              </a>
-                            </div>
                             <div className="blakish-overlay"></div>
                           </div>
                           <div className="best-course-text">
@@ -306,16 +241,7 @@ export default function courses() {
                               width={400}
                               height={220}
                             />
-                            <div className="course-price text-center gradient-bg">
-                              <span>$99.00</span>
-                            </div>
 
-                            <div className="course-details-btn">
-                              <a href="#">
-                                COURSE DETAIL{" "}
-                                <i className="fas fa-arrow-right"></i>
-                              </a>
-                            </div>
                             <div className="blakish-overlay"></div>
                           </div>
                           <div className="best-course-text">
@@ -344,16 +270,7 @@ export default function courses() {
                               width={400}
                               height={220}
                             />
-                            <div className="course-price text-center gradient-bg">
-                              <span>$99.00</span>
-                            </div>
 
-                            <div className="course-details-btn">
-                              <a href="#">
-                                COURSE DETAIL{" "}
-                                <i className="fas fa-arrow-right"></i>
-                              </a>
-                            </div>
                             <div className="blakish-overlay"></div>
                           </div>
                           <div className="best-course-text">
@@ -380,16 +297,7 @@ export default function courses() {
                               width={400}
                               height={220}
                             />
-                            <div className="course-price text-center gradient-bg">
-                              <span>$99.00</span>
-                            </div>
 
-                            <div className="course-details-btn">
-                              <a href="#">
-                                COURSE DETAIL{" "}
-                                <i className="fas fa-arrow-right"></i>
-                              </a>
-                            </div>
                             <div className="blakish-overlay"></div>
                           </div>
                           <div className="best-course-text">
@@ -416,16 +324,7 @@ export default function courses() {
                               width={400}
                               height={220}
                             />
-                            <div className="course-price text-center gradient-bg">
-                              <span>$99.00</span>
-                            </div>
 
-                            <div className="course-details-btn">
-                              <a href="#">
-                                COURSE DETAIL{" "}
-                                <i className="fas fa-arrow-right"></i>
-                              </a>
-                            </div>
                             <div className="blakish-overlay"></div>
                           </div>
                           <div className="best-course-text">
@@ -452,22 +351,71 @@ export default function courses() {
                               width={400}
                               height={220}
                             />
-                            <div className="course-price text-center gradient-bg">
-                              <span>$99.00</span>
-                            </div>
 
-                            <div className="course-details-btn">
-                              <a href="#">
-                                COURSE DETAIL{" "}
-                                <i className="fas fa-arrow-right"></i>
-                              </a>
-                            </div>
                             <div className="blakish-overlay"></div>
                           </div>
                           <div className="best-course-text">
                             <div className="course-title mb20 headline relative-position">
                               <h3>
                                 <a href="#">Food Safety and HACCP Training</a>
+                              </h3>
+                            </div>
+                            <div className="course-meta">
+                              <span className="course-category">
+                                <a href="#">Occupational Safety and Health</a>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="col-md-4">
+                        <div className="best-course-pic-text relative-position">
+                          <div className="best-course-pic relative-position">
+                            <Image
+                              src="/assets/img/course/retirement.jpg"
+                              alt=""
+                              width={400}
+                              height={220}
+                            />
+
+                            <div className="blakish-overlay"></div>
+                          </div>
+                          <div className="best-course-text">
+                            <div className="course-title mb20 headline relative-position">
+                              <h3>
+                                <a href="#">
+                                  Pre-Retirement Training for Employees
+                                </a>
+                              </h3>
+                            </div>
+                            <div className="course-meta">
+                              <span className="course-category">
+                                <a href="#">Occupational Safety and Health</a>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="col-md-4">
+                        <div className="best-course-pic-text relative-position">
+                          <div className="best-course-pic relative-position">
+                            <Image
+                              src="/assets/img/course/inspection.jpg"
+                              alt=""
+                              width={400}
+                              height={220}
+                            />
+
+                            <div className="blakish-overlay"></div>
+                          </div>
+                          <div className="best-course-text">
+                            <div className="course-title mb20 headline relative-position">
+                              <h3>
+                                <a href="#">
+                                  OSH and Labour Inspection Training
+                                </a>
                               </h3>
                             </div>
                             <div className="course-meta">
