@@ -24,6 +24,12 @@ export default function Footer() {
                       company designed to meet the need gaps of employees and in
                       employers at any stage of their career plans.
                     </p>
+                    <Image
+                      src="/assets/img/about/slogan.jpg"
+                      alt=""
+                      width={247}
+                      height={100}
+                    />
                   </div>
                 </div>
               </div>

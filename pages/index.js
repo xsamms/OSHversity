@@ -83,10 +83,7 @@ export default function Home() {
                 height={980}
               />
               <div class="carousel-caption d-none d-md-block">
-                <h3 style={{ textShadow: "1px 1px #000" }}>
-                  Health, Safety and Wellness Training
-                </h3>
-                <p>OSHversity - TRAINING ORGANIZATION</p>
+                <h3 style={{ textShadow: "1px 1px #000" }}>OSHversity TDC</h3>
               </div>
             </div>
             <div class="carousel-item">
@@ -98,10 +95,7 @@ export default function Home() {
                 height={980}
               />
               <div class="carousel-caption d-none d-md-block">
-                <h3 style={{ textShadow: "1px 1px #000" }}>
-                  HEALTH & SAFETY BUSINESS SCHOOL
-                </h3>
-                <p>OSHversity - TRAINING ORGANIZATION</p>
+                <h3 style={{ textShadow: "1px 1px #000" }}>OSHversity TDC</h3>
               </div>
             </div>
             <div class="carousel-item">
@@ -113,10 +107,7 @@ export default function Home() {
                 height={980}
               />
               <div class="carousel-caption d-none d-md-block">
-                <h3 style={{ textShadow: "1px 1px #000" }}>
-                  Improve competence in the workplace
-                </h3>
-                <p>OSHversity - TRAINING ORGANIZATION</p>
+                <h3 style={{ textShadow: "1px 1px #000" }}>OSHversity TDC</h3>
               </div>
             </div>
             <div class="carousel-item">
@@ -128,7 +119,7 @@ export default function Home() {
                 height={980}
               />
               <div class="carousel-caption d-none d-md-block">
-                <p>OSHversity - TRAINING ORGANIZATION</p>
+                <h3 style={{ textShadow: "1px 1px #000" }}>OSHversity TDC</h3>
               </div>
             </div>
           </div>
