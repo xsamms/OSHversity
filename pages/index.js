@@ -411,9 +411,9 @@ export default function Home() {
                   <div className="about-list mb65 ul-li-block "></div>
                   <div className="about-btn ">
                     <div className="genius-btn gradient-bg text-center text-uppercase ul-li-block bold-font">
-                      <a href="#">
+                      <Link href="/about">
                         Learn more <i className="fas fa-caret-right"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
